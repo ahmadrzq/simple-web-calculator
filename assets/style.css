@@ -63,3 +63,9 @@ body {
     margin-top: 20px;
 }
 
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+}
+
