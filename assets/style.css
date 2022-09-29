@@ -1,71 +1,102 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .flex-container-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    /* properti pendukung */
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: right;
+  /* properti pendukung */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
 }
 
 .flex-container-row {
-    display: flex;
+  display: flex;
 }
 
 .button {
-    flex-basis: 20%;
+  flex-basis: 20%;
 
-    /* properti pendukung */
-    font-size: 1.5em;
-    text-align: center;
-    padding: 40px;
-    border: 1px solid black;
-    background: -webkit-linear-gradient(top, #062c51, rgb(40, 80, 128));
-    cursor: pointer;
-    color: white;
+  /* properti pendukung */
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid black;
+  background: -webkit-linear-gradient(top, #062c51, rgb(40, 80, 128));
+  cursor: pointer;
+  color: white;
 }
 
 .button:hover {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .double {
-    flex-basis: 40%;
+  flex-basis: 40%;
 }
 
 .display {
-    background-color: rgb(9, 20, 42);
-    color: aliceblue;
-    padding: 10px 20px;
-    width: 100%;
-    border: 1px solid  rgb(9, 20, 42);
-    font-size: 2em;
+  background-color: rgb(9, 20, 42);
+  color: aliceblue;
+  padding: 10px 20px;
+  width: 100%;
+  border: 1px solid rgb(9, 20, 42);
+  font-size: 2em;
 }
 
 .negative,
 .operator,
 .equals {
-    background: rgb(5, 29, 80);
+  background: rgb(5, 29, 80);
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
 }
 
 @media screen and (max-width: 600px) {
-    .button {
-        padding: 30px;
-    }
-}
+  .button {
+    padding: 30px;
+  }
 
+  .history {
+    width: 100%;
+  }
+}
