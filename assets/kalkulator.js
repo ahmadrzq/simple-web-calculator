@@ -74,6 +74,7 @@ function handleOperator(operator) {
 
         // mengatur ulang nilai display number supaya tombol selanjutnya dimulai dari pertama lagi
         calculator.displayNumber = '0';
+        calculator.isWaitForSecondNumber = false;
     } else {
         alert('operator sudah ditetapkan');
     }
